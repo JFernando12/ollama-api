@@ -1,0 +1,26 @@
+{
+  "dependencies": {
+    "@langchain/community": "^0.3.32",
+    "@langchain/core": "^0.3.40",
+    "@langchain/ollama": "^0.2.0",
+    "express": "^4.21.2",
+    "ts-node": "^10.9.2"
+  },
+  "name": "ollama-api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "pm2 start dist/server.js",
+    "stop": "pm2 stop all",
+    "dev": "ts-node src/server.ts",
+    "build": "tsc"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "devDependencies": {
+    "@types/express": "^5.0.0"
+  }
+}
